@@ -1,3 +1,69 @@
-.navBar {
+/* styles.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.topBar {
     display: flex;
+    font-size: 14px;
+}
+
+.topBar li a {
+    @apply 
+    inline-block
+    px-4
+    py-2
+
+    ;
+}
+
+.cssbuttons-io-button {
+    background: #43523a;
+    color: white;
+    /*font-family: 'Wix Madefor Text', sans-serif;*/
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 12px;
+    border-radius: 9999px;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 9999px;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #43523a;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
 }
