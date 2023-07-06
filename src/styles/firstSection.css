@@ -2,3 +2,49 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.section {
+    @apply 
+    bg-white
+    h-screen
+    w-screen
+    text-center
+    relative
+    overflow-hidden
+    flex
+    justify-center
+    items-center
+    ;
+
+    background-color: #f9f7ef;
+}
+
+.queEsDansalma {
+    @apply
+    z-30
+    relative 
+    w-1/2
+    flex 
+    flex-col
+    pb-20
+    ;
+    color: #43523a;
+}
+
+.title {
+    @apply
+    text-4xl 
+    font-medium 
+    text-start
+    max-w-[50%]
+    ;
+    
+}
+
+.parraf {
+    @apply
+    text-sm
+    pt-3
+    text-justify
+    ;
+    padding-left: 2px;
+}

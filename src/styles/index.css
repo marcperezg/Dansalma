@@ -13,19 +13,6 @@
     w-full 
     justify-between
     z-50
-    ;
-}
-
-.section {
-    @apply 
-    bg-white
-    h-screen
-    w-screen
-    text-center
-    relative
-    overflow-hidden
-    
-    ;
 }
 
 .backdrop {
@@ -45,3 +32,19 @@
     ;
     transition-duration: 400ms;
 }
+
+.main {
+    @apply
+    snap-y 
+    snap-mandatory 
+    relative 
+    w-full
+    h-screen 
+    overflow-auto
+}
+
+.main div {
+    @apply
+    snap-center
+}
+
