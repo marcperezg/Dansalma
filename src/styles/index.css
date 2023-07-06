@@ -12,6 +12,36 @@
     top-0 
     w-full 
     justify-between
+    z-50
+    ;
+}
+
+.section {
+    @apply 
+    bg-white
+    h-screen
+    w-screen
+    text-center
+    relative
+    overflow-hidden
     
     ;
+}
+
+.backdrop {
+    @apply 
+    absolute 
+    bg-black/5 
+    backdrop-blur-lg 
+    rounded 
+	left-[var(--left)] 
+    top-[var(--top)]
+	w-[var(--width)] 
+    h-[var(--height)]
+    transition-all 
+    ease-in-out 
+    opacity-0
+    -z-10
+    ;
+    transition-duration: 400ms;
 }

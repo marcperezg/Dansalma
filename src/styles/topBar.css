@@ -7,6 +7,8 @@
 .topBar {
     display: flex;
     font-size: 14px;
+    font-weight: 600;
+    color: #43523a;
 }
 
 .topBar li a {
