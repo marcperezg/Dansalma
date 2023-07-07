@@ -1,24 +1,52 @@
 ---
-import "../styles/serviceSection.css"
 import individual from "../../public/individual.jpg"
 import grupo from "../../public/grupo.jpg"
 import masaje from "../../public/masaje.jpg"
 import menopausia from "../../public/menopausia.png"
 import formacion from "../../public/formacion.jpg"
 import taller from "../../public/talleres.jpg"
+import Card from "../components/serviceCards.astro"
+import "../styles/serviceSection.css"
 ---
 
-<!-- Función para controlar el blour de las imagenes -->
-<script src="../components/blurMotion.js"></script>
-
 <section class="section">
-    <div class="div">
-        <img src={individual} alt="Sesiones individuales">
-        <img src={grupo} alt="Sesiones grupales">
-        <img src={masaje} alt="Masajes">
-        <img src={menopausia} alt="Circulos de menopausia">
-        <img src={formacion} alt="Formación/ workshop para equipos">
-        <img src={taller} alt="Talleres">
+    <div class="cardDiv">
+        <Card
+            image={individual}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
+        <Card
+            image={grupo}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
+        <Card
+            image={masaje}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
+        <Card
+            image={menopausia}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
+        <Card
+            image={formacion}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
+        <Card
+            image={taller}
+            alt="Sesiones individuales"
+            title="Hola"
+            description="adeu"
+        />
     </div>
-    
-</section>
+  </section>
+  
