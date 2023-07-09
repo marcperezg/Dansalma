@@ -6,7 +6,7 @@
 
 .topBar {
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #43523a;
 }
@@ -16,17 +16,15 @@
     inline-block
     px-4
     py-2
-
     ;
 }
 
 .cssbuttons-io-button {
     background: #43523a;
     color: white;
-    /*font-family: 'Wix Madefor Text', sans-serif;*/
     padding: 0.35em;
     padding-left: 1.2em;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 9999px;
     border: none;
     letter-spacing: 0.05em;

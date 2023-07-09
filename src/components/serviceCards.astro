@@ -4,10 +4,9 @@ const { image, alt, title, description } = Astro.props;
 ---
 
 <!-- Card.astro -->
-<div class="cardDiv">
-  <div class="card">
-    <img src={image} alt={alt} />
-    <strong>{title}</strong>
-    <span>{description}</span>
-  </div>  
+
+<div class="card">
+  <img src={image} alt={alt} />
+  <h1>{title}</h1>
+  <p>{description}</p>
 </div>

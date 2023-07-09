@@ -12,21 +12,6 @@
     flex
     justify-center
     items-center
-    ;
-
-    background-color: #f9f7ef;
-}
-
-.sectionC {
-    @apply 
-    bg-white
-    h-screen
-    w-screen
-    text-center
-    relative
-    flex
-    justify-center
-    items-center
     overflow-auto
     ;
 
@@ -36,13 +21,15 @@
 .cardDiv {
     @apply
     grid
-    gap-4
+    gap-5
     w-[90%]
+    max-h-[80%]
     ;
-    grid-auto-rows: 350px;
+    grid-auto-rows: 390px;
     grid-template-columns: 
         repeat(
             auto-fit,
-            minmax(150px, 10fr)
+            minmax(200px, 1fr)
         );    
 }
+
