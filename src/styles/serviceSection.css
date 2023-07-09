@@ -9,10 +9,25 @@
     w-screen
     text-center
     relative
-    overflow-auto
     flex
     justify-center
     items-center
+    ;
+
+    background-color: #f9f7ef;
+}
+
+.sectionC {
+    @apply 
+    bg-white
+    h-screen
+    w-screen
+    text-center
+    relative
+    flex
+    justify-center
+    items-center
+    overflow-auto
     ;
 
     background-color: #f9f7ef;
