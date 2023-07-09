@@ -24,9 +24,66 @@
     flex-col
     justify-center
     items-center
-    gap-5
+    gap-10
     w-[90%]
     max-h-[80%]
     ;  
 }
 
+.socialImgDiv {
+    @apply
+    z-30
+    max-w-[50%]
+    h-[12rem]
+    flex
+    justify-center
+    items-center
+    gap-10
+}
+
+.socialMedia {
+    @apply
+    flex
+    gap-5
+    justify-center
+    items-center
+    
+}
+
+.socialMedia img{
+    @apply
+    object-cover
+    w-[2rem]
+    h-[2rem]
+    cursor-pointer
+    ;
+}
+
+.meImg {
+    @apply
+    object-cover
+    w-[12rem]
+    h-[12rem]
+    rounded-full
+    ;
+}
+
+
+.title {
+    @apply
+    text-4xl 
+    font-medium 
+    text-start
+    max-w-[50%]
+    ;
+    
+}
+
+.parraf {
+    @apply
+    text-sm
+    pt-3
+    text-justify
+    ;
+    padding-left: 2px;
+}

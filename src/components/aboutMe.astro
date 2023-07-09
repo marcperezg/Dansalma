@@ -1,15 +1,25 @@
 ---
-import "../styles/firstSection.css"
+import "../styles/aboutMe.css"
 import bkground from "../../public/background.png"
 import Olga from "../../public/Olga.jpg"
+import Insta from "../../public/Instagram.svg"
+import FaceB from "../../public/facebook.png"
+import Twitter from "../../public/Twitter.png"
 ---
 
 <section class="section">
     <div class="aboutMeDiv">
-        <img src={Olga}>
+        <div class="socialImgDiv">
+            <img class="meImg" src={Olga}>
+            <div class="socialMedia">
+                <img src={Insta}>
+                <img src={FaceB}>
+                <img src={Twitter}>
+            </div>
+        </div>
         <div class="queEsDansalma">
             <h1 class="title">
-                ¿Qué es afwffeqfq?
+                Olga Guerrero
             </h1>
             <p class="parraf">
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here

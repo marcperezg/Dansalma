@@ -1,0 +1,29 @@
+---
+import "../styles/contact.css"
+import bkground from "../../public/background.png"
+---
+
+<section class="section">
+    <div class="body z-20">
+        <div class="container">
+            <form>
+                <div class="head">
+                    <span>Contacta conmigo</span>
+                    <p style="font-style: italic;">'It is a long established fact that a reader will be'</p>
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Número de teléfono">
+                    <input class="h-[10rem]" type="text" placeholder="¿Porque nos contactas?">
+                </div>
+                <button>Enviar</button>
+            </form>    
+        </div>    
+    </div>
+    <div class="z--10 absolute top-0 bottom-0 h-full">
+        <img class="object-center" src={bkground}>
+    </div>
+</section>
+
+
