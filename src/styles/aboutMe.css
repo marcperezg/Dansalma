@@ -18,33 +18,15 @@
     background-color: #f9f7ef;
 }
 
-.queEsDansalma {
+.aboutMeDiv{
     @apply
-    z-30
-    relative 
-    w-1/2
-    flex 
+    flex
     flex-col
-    pb-20
-    ;
-    color: #43523a;
+    justify-center
+    items-center
+    gap-5
+    w-[90%]
+    max-h-[80%]
+    ;  
 }
 
-.title {
-    @apply
-    text-4xl 
-    font-medium 
-    text-start
-    max-w-[50%]
-    ;
-    
-}
-
-.parraf {
-    @apply
-    text-sm
-    pt-3
-    text-justify
-    ;
-    padding-left: 2px;
-}
