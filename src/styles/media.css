@@ -190,3 +190,21 @@
     }
 
 }
+
+#calendar-iframe {
+    width: 100%; /* Cambia el ancho del calendario */
+    height: 600px; /* Cambia la altura del calendario */
+    border: 1px solid #000000; /* Cambia el estilo del borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+
+/* Estilos adicionales para ajustar el contenido del calendario */
+#calendar-iframe body {
+    font-family: Arial, sans-serif; /* Cambia la fuente del calendario */
+}
+
+#calendar-iframe .grid-container {
+    background-color: #000000; /* Cambia el color de fondo del calendario */
+}
+  
