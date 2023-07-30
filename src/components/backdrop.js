@@ -1,19 +1,21 @@
-const listItem = document.querySelectorAll("#landing-header li");
-const menuBackdrop = document.querySelector('#menu-backdrop');
+if (window.matchMedia("(min-width: 1250px)").matches) {
+  const listItem = document.querySelectorAll("#landing-header li");
+  const menuBackdrop = document.querySelector('#menu-backdrop');
 
-listItem.forEach((item) => {
-  item.addEventListener("mouseenter", () => {
-    const { left, top, width, height } = item.getBoundingClientRect();
-    menuBackdrop.style.setProperty("--left", `${left}px`);
-    menuBackdrop.style.setProperty("--top", `${top}px`);
-    menuBackdrop.style.setProperty("--width", `${width}px`);
-    menuBackdrop.style.setProperty("--height", `${height}px`);
+  listItem.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const { left, top, width, height } = item.getBoundingClientRect();
+      menuBackdrop.style.setProperty("--left", `${left}px`);
+      menuBackdrop.style.setProperty("--top", `${top}px`);
+      menuBackdrop.style.setProperty("--width", `${width}px`);
+      menuBackdrop.style.setProperty("--height", `${height}px`);
 
-    menuBackdrop.style.opacity = "1";
-    menuBackdrop.style.visibility = "visible";
+      menuBackdrop.style.opacity = "1";
+      menuBackdrop.style.visibility = "visible";
+    });
+    item.addEventListener("mouseleave", () => {
+      menuBackdrop.style.opacity = "0";
+      menuBackdrop.style.visibility = "hidden";
+    });
   });
-  item.addEventListener("mouseleave", () => {
-    menuBackdrop.style.opacity = "0";
-    menuBackdrop.style.visibility = "hidden";
-  });
-});
+}
