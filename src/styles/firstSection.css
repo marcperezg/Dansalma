@@ -16,17 +16,60 @@
     ;
 
     background-color: #f9f7ef;
+    background-image: url(../../public/blobBG.svg);
+    background-size: cover; /* Escala proporcionalmente y ocupa todo el section */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra el fondo en el section */
 }
 
+@media (max-width: 1275px) and (min-width: 801px) {
+    .section {
+        background-image: url(../../public/blobBGmd.svg);
+    }
+
+}
+
+@media (max-width: 800px){
+    .section {
+        background-image: url(../../public/blobBGsmall.svg);
+    }
+}
+
+@media (max-width: 1250px) {
+    .queEsDansalma {
+        @apply
+        z-30
+        relative 
+        flex 
+        flex-col
+        pb-20
+        ;
+        width: 80%;
+        color: #43523a;
+    }
+
+    .title {
+        @apply
+        text-4xl 
+        font-medium 
+        text-start
+        ;
+        max-width: 90%;
+        
+    }
+}
+
+@media (min-width: 1251px) {
+    
 .queEsDansalma {
     @apply
     z-30
     relative 
-    w-1/2
     flex 
     flex-col
     pb-20
     ;
+    width: 50%;
     color: #43523a;
 }
 
@@ -35,8 +78,8 @@
     text-4xl 
     font-medium 
     text-start
-    max-w-[50%]
     ;
+    max-width: 50%;
     
 }
 
@@ -47,4 +90,5 @@
     text-justify
     ;
     padding-left: 2px;
+}
 }
