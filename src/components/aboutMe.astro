@@ -1,22 +1,29 @@
 ---
 import "../styles/aboutMe.css"
-import Olga from "../../public/Olga.jpg"
-import Insta from "../../public/Instagram.svg"
-import FaceB from "../../public/facebook.png"
-import Twitter from "../../public/Twitter.png"
+import Olga from "../../public/mama.jpeg"
 ---
+
 
 <section class="section">
     <div class="aboutMeDiv">
-        <div class="socialImgDiv">
+        <div class="socialDiv">
             <img class="meImg" src={Olga}>
-            <div class="socialMedia">
-                <img src={Insta}>
-                <img src={FaceB}>
-                <img src={Twitter}>
-            </div>
+            <ul class="wrapper">
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                <li class="icon linkedin">
+                  <span class="tooltip">Linkedin</span>
+                  <span><i class="fab fa-linkedin"></i></span>
+                </li>
+              </ul>
         </div>
-        <div class="queEsDansalma">
+        <div class="infoText">
             <h1 class="title">
                 Olga Guerrero
             </h1>

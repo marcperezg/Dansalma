@@ -20,62 +20,145 @@
 
 .aboutMeDiv{
     @apply
-    flex
-    flex-col
-    justify-center
-    items-center
-    gap-10
-    w-[90%]
-    max-h-[80%]
-    ;  
+    w-full h-full flex flex-col justify-center content-center items-center pb-16
 }
 
-.socialImgDiv {
+.socialDiv {
     @apply
-    z-30
-    max-w-[50%]
-    h-[12rem]
-    flex
-    justify-center
-    items-center
-    gap-10
-}
-
-.socialMedia {
-    @apply
-    flex
-    gap-5
-    justify-center
-    items-center
-    
-}
-
-.socialMedia img{
-    @apply
-    object-cover
-    w-[2rem]
-    h-[2rem]
-    cursor-pointer
-    ;
+    w-full h-[28%] flex justify-center gap-6 items-center
 }
 
 .meImg {
     @apply
-    object-cover
-    w-[12rem]
-    h-[12rem]
-    rounded-full
+    h-[10rem] w-[10rem] object-cover object-center rounded-full
     ;
+
 }
 
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .icon {
+    position: relative;
+    background: #43523a;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .icon:hover span,
+  .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .facebook:hover,
+  .facebook:hover .tooltip,
+  .facebook:hover .tooltip::before {
+    background: #1b78f1;
+    color: #ffffff;
+  }
+  
+  .linkedin:hover,
+  .linkedin:hover .tooltip,
+  .linkedin:hover .tooltip::before {
+    background: #095eb3;
+    color: #ffffff;
+  }
+  
+  .instagram:hover,
+  .instagram:hover .tooltip,
+  .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+  }
+
+
+@media (max-width: 1250px) {
+    .infoText {
+        @apply
+        flex 
+        flex-col
+        justify-center content-center
+        ;
+        width: 80%;
+        color: #43523a;
+    }
+
+    .title {
+        @apply
+        text-4xl 
+        font-medium 
+        text-start
+        ;
+        max-width: 90%;
+        
+    }
+}
+
+@media (min-width: 1251px) {
+    
+.infoText {
+    @apply
+    flex 
+    flex-col
+    justify-center content-center
+    ;
+    width: 50%;
+    color: #43523a;
+}
 
 .title {
     @apply
     text-4xl 
     font-medium 
     text-start
-    max-w-[50%]
     ;
+    max-width: 50%;
     
 }
 
@@ -86,4 +169,27 @@
     text-justify
     ;
     padding-left: 2px;
+}
+}
+
+@media (max-width: 600px){
+    .meImg{
+        @apply
+        h-[7.2rem] w-[7.2rem] 
+    }
+
+    .socialDiv {
+        @apply
+        h-1/5
+        gap-4
+    }
+
+    .wrapper {
+        gap: 1rem;
+    }
+
+    .icon {
+        width: 42px;
+        height: 42px;
+    }
 }
