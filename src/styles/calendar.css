@@ -1,7 +1,6 @@
 .structFullDiv {
     @apply
     w-[100%] h-[100%] flex justify-center items-center;
-    display: none;
 }
 
 .calendarDiv{
@@ -24,7 +23,40 @@
     }
 
     .structSmallDiv{
-        display: none;
+        @apply
+        w-full
+        h-[80%]
+        flex
+        flex-col
+        justify-center
+        items-center
+        gap-5
+    }
 
+    .imgHeader {
+        width: 90%;
+        height: 350px; 
+    }
+
+    .imgHeader > img {
+        @apply
+        object-cover w-full 
+    }
+
+    .cal-footer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        color: #43523a;
+    }
+
+    .cal-title {
+        @apply
+        text-2xl 
+        font-medium 
+        text-center
+        w-full;
     }
 }

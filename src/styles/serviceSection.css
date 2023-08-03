@@ -2,14 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 .cardDiv {
     @apply
     grid
     gap-5
-    pt-5
-    overflow-y-scroll
-    w-[80%]
-    h-[85%]
+    w-[90%]
+    max-h-[80%]
     ;
     grid-auto-rows: 390px;
     grid-template-columns: 
@@ -17,5 +16,22 @@
             auto-fit,
             minmax(200px, 1fr)
         );    
+}
+
+@media (max-width: 750px) {
+    .cardDiv {
+        @apply
+        pb-6
+        overflow-y-scroll
+        w-[80%]
+        h-[75%]
+        ;
+        grid-auto-rows: 390px;
+        grid-template-columns: 
+            repeat(
+                auto-fit,
+                minmax(200px, 1fr)
+            );    
+    }
 }
 
