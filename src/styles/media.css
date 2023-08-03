@@ -31,20 +31,19 @@
     height: 100%;
 }
 
-.title {
+.md-title {
     @apply
     text-4xl 
     font-medium 
     text-center
-    max-w-[80%]
+    w-full
     ;
     
 }
 
-.parraf {
+.md-parraf {
     @apply
     text-sm
-    pt-3
     text-justify
     ;
 }
@@ -90,7 +89,8 @@
 }
 
 .slider-frame img {
-    width: 100%;
+    @apply
+    object-cover w-full
 }
 
 .btn {
@@ -188,41 +188,55 @@
 
 }
 
-#calendar-iframe {
-    width: 100%; /* Cambia el ancho del calendario */
-    height: 600px; /* Cambia la altura del calendario */
-    border: 1px solid #000000; /* Cambia el estilo del borde */
-    border-radius: 5px; /* Agrega esquinas redondeadas */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega sombra */
-}
 
-/* Estilos adicionales para ajustar el contenido del calendario */
-#calendar-iframe body {
-    font-family: Arial, sans-serif; /* Cambia la fuente del calendario */
-}
-
-#calendar-iframe .grid-container {
-    background-color: #000000; /* Cambia el color de fondo del calendario */
-}
-
-
-@media (max-width: 1250px) {
+@media (max-width: 1250px){
     .global {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        gap: 0;
+        @apply
+        w-[80%]
+        h-[70%]
     }
 
     .div-img {
-        width: 75%;
+        width: 90%;
+        height: 400px; 
     }
 
     .slider-frame {
         @apply rounded-lg shadow-md;
         position: relative;
         width: 100%;
-        height: 200px;
+        height: 100%;
         overflow: hidden;
+    }
+
+    .left-div {
+        @apply
+        w-full
+        gap-0
+    }
+
+    .md-title {
+        @apply
+        text-4xl
+        text-center
+        w-[90%];
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .div-img {
+        width: 100%;
+        height: 250px; 
+    }
+
+    .md-title {
+        @apply
+        text-justify
+        w-full;
     }
 }

@@ -6,8 +6,10 @@
     @apply
     grid
     gap-5
-    w-[90%]
-    max-h-[80%]
+    pt-5
+    overflow-y-scroll
+    w-[80%]
+    h-[85%]
     ;
     grid-auto-rows: 390px;
     grid-template-columns: 
