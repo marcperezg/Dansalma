@@ -3,23 +3,21 @@ import "../styles/contact.css"
 ---
 
 <section class="section">
-    <div class="body z-20">
-        <div class="container">
-            <form>
+        <div class="form-container">
+            <form class="ct-form">
                 <div class="head">
                     <span>Contacta conmigo</span>
                     <p style="font-style: italic;">'It is a long established fact that a reader will be'</p>
                 </div>
                 <div class="inputs">
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Número de teléfono">
+                    <input type="text" placeholder="Nombre Completo" required="">
+                    <input type="email" placeholder="Email" required="">
+                    <input type="tel" placeholder="Número de teléfono" required="">
                     <textarea class="textMessage" id="message" name="message" placeholder="¿Porque nos contactas?" required=""></textarea>
                 </div>
-                <button>Enviar</button>
+                <button class="ct-btn">Enviar</button>
             </form>    
         </div>    
-    </div>
 </section>
 
 

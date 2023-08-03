@@ -1,42 +1,14 @@
-.section {
-    @apply 
-    bg-white
-    h-screen
-    w-screen
-    text-center
-    relative
-    flex
-    justify-center
-    items-center
-    overflow-auto
-    ;
-
-    background-color: #f9f7ef;
-}
 
 
-.textMessage {
-  resize: none;
-  outline: none;
-  width: 100%;
-  height: 150px;
-  padding: 8px 15px;
-    
-}
 
-textarea:focus {
-  outline: none;
-}
-
-.container {
-    
-    width: 300px;
+.form-container {
+    max-width: 70%;
     background-color: #d7e6e0;
     border-radius: 15px;
     overflow: hidden;
   }
   
-  form {
+  .ct-form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,24 +17,24 @@ textarea:focus {
     text-align: center;
   }
   
-  form .head {
+   .head {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
   
-  form .head span {
+   .head > span {
     font-size: 1.6rem;
     font-weight: bolder;
     color: black;
   }
   
-  form .head p {
+   .head > p {
     font-size: 1.1rem;
     color: #7C6666;
   }
   
-  form .inputs {
+   .inputs {
     overflow: hidden;
     background-color: #fff;
     width: 100%;
@@ -72,9 +44,9 @@ textarea:focus {
     outline: 0;
   }
   
-form .inputs input:nth-child(1),
-form .inputs input:nth-child(2),
-form .inputs input:nth-child(3) {
+ .inputs > input:nth-child(1),
+ .inputs > input:nth-child(2),
+ .inputs > input:nth-child(3) {
   /* Estilos comunes para los tres primeros inputs */
 
     border: none;
@@ -86,19 +58,22 @@ form .inputs input:nth-child(3) {
     font-weight: 200;
   }
 
-  form .inputs input:nth-child(4) {
+
+  .textMessage {
+    resize: none;
+    outline: none;
     width: 100%;
-    height: 10rem;
-    border: none;
+    height: 150px;
+    padding: 8px 15px;
+      
+  }
+  
+  textarea:focus {
     outline: none;
   }
-
-  form .inputs input:nth-child(4)::placeholder {
-    text-align: center;
-  }
   
   
-  form button {
+  .ct-btn {
     background-color: #43523a;
     color: white;
     width: 100%;
@@ -111,24 +86,20 @@ form .inputs input:nth-child(3) {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.15s ease-in-out;
   }
   
-  form button:hover {
-    background-color: #43523a;
+  .ct-btn:hover {
+    background-color: #2f3a29;
   }
 
   @media (max-width: 1250px) {
-    .container {
-  
-      padding: 2rem;
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+    .form-container {
+      max-width: 92%;
     }
 
-    form {
-      max-width: 90%;
+    .ct-form {
+      padding: 26px 18px 18px;
     }
 }

@@ -48,3 +48,35 @@
     snap-center
 }
 
+.section {
+    @apply 
+    bg-white
+    h-screen
+    w-screen
+    text-center
+    relative
+    flex
+    justify-center
+    items-center
+    overflow-auto
+    ;
+
+    background-color: #f9f7ef;
+    background-image: url(../../public/blobBG.svg);
+    background-size: cover; /* Escala proporcionalmente y ocupa todo el section */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra el fondo en el section */
+}
+
+@media (max-width: 1275px) and (min-width: 801px) {
+    .section {
+        background-image: url(../../public/blobBGmd.svg);
+    }
+
+}
+
+@media (max-width: 800px){
+    .section {
+        background-image: url(../../public/blobBGsmall.svg);
+    }
+}

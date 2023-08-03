@@ -1,0 +1,29 @@
+.structFullDiv {
+    @apply
+    w-[100%] h-[100%] flex justify-center items-center
+}
+
+.calendarDiv{
+    @apply
+    w-[80%] h-[74.2%] items-center overflow-y-scroll pt-10
+}
+
+.calendarFrame {
+    @apply
+    sticky top-0 w-full h-full
+}
+
+.structSmallDiv{
+    display: none;
+}
+
+@media (min-width: 740px){
+    .structFullDiv {
+        display: none;
+    }
+
+    .structSmallDiv{
+        display: none;
+
+    }
+}

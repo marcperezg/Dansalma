@@ -1,35 +1,56 @@
 ---
-import "../styles/aboutMe.css"
-import Olga from "../../public/mama.jpeg"
+import "../styles/aboutMe.css";
+import Olga from "../../public/mama.jpeg";
 ---
 
-
 <section class="section">
-    <div class="aboutMeDiv">
-        <div class="socialDiv">
-            <img class="meImg" src={Olga}>
-            <ul class="wrapper">
-                <li class="icon instagram">
-                    <span class="tooltip">Instagram</span>
-                    <span><i class="fab fa-instagram"></i></span>
-                </li>
-                <li class="icon facebook">
-                  <span class="tooltip">Facebook</span>
-                  <span><i class="fab fa-facebook-f"></i></span>
-                </li>
-                <li class="icon linkedin">
-                  <span class="tooltip">Linkedin</span>
-                  <span><i class="fab fa-linkedin"></i></span>
-                </li>
-              </ul>
-        </div>
-        <div class="infoText">
-            <h1 class="title">
-                Olga Guerrero
-            </h1>
-            <p class="parraf">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here
-            </p>
-        </div>
+  <div class="aboutMeDiv">
+    <div class="socialDiv">
+      <img class="meImg" src={Olga} />
+      <ul class="wrapper">
+        <a
+            id="enlace"
+          class="w-full h-full"
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+        </a>
+        <a
+        id="enlace"
+          class="w-full h-full"
+          href="https://es-es.facebook.com/"
+          target="_blank"
+        >
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </li>
+        </a>
+        <a
+        id="enlace"
+          class="w-full h-full"
+          href="https://www.linkedin.com/home"
+          target="_blank"
+        >
+          <li class="icon linkedin">
+            <span class="tooltip">Linkedin</span>
+            <span><i class="fab fa-linkedin"></i></span>
+          </li>
+        </a>
+      </ul>
     </div>
+    <div class="infoText">
+      <h1 class="aM-title">Olga Guerrero</h1>
+      <p class="aM-parraf">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here
+      </p>
+    </div>
+  </div>
 </section>

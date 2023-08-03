@@ -2,37 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.section {
-    @apply 
-    bg-white
-    h-screen
-    w-screen
-    text-center
-    relative
-    flex
-    justify-center
-    items-center
-    overflow-auto
+.fs-parraf {
+    @apply
+    text-sm
+    pt-3
+    text-justify
     ;
-
-    background-color: #f9f7ef;
-    background-image: url(../../public/blobBG.svg);
-    background-size: cover; /* Escala proporcionalmente y ocupa todo el section */
-    background-repeat: no-repeat;
-    background-position: center; /* Centra el fondo en el section */
-}
-
-@media (max-width: 1275px) and (min-width: 801px) {
-    .section {
-        background-image: url(../../public/blobBGmd.svg);
-    }
-
-}
-
-@media (max-width: 800px){
-    .section {
-        background-image: url(../../public/blobBGsmall.svg);
-    }
+    padding-left: 2px;
 }
 
 @media (max-width: 1250px) {
@@ -48,7 +24,7 @@
         color: #43523a;
     }
 
-    .title {
+    .fs-title {
         @apply
         text-4xl 
         font-medium 
@@ -73,7 +49,7 @@
     color: #43523a;
 }
 
-.title {
+.fs-title {
     @apply
     text-4xl 
     font-medium 
@@ -83,12 +59,4 @@
     
 }
 
-.parraf {
-    @apply
-    text-sm
-    pt-3
-    text-justify
-    ;
-    padding-left: 2px;
-}
 }
