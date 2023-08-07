@@ -1,9 +1,13 @@
 .navBarSmall {
-    @apply w-full flex justify-between items-center
+    @apply w-full flex justify-between items-center py-2
 }
 
 .logo {
-    @apply flex
+    @apply flex items-center pb-1 pl-4;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    color: #43523a;
 }
 
 .links-small {
@@ -50,13 +54,11 @@
     ;
 }
 
-.hamburger {
-    cursor: pointer;
-}
+.topBar-svg {
 
-.hamburger svg {
+    padding-right: 1rem;
     /* The size of the SVG defines the overall size */
-    height: 3em;
+    height: 2.7em;
     /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -77,12 +79,12 @@
 }
 
 
-#menuTrigger:checked+.hamburger svg .line-top-bottom {
+.animation-trigger .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
 }
 
-#menuTrigger:checked+.hamburger svg {
+.animation-trigger {
     transform: rotate(-45deg);
 }
 

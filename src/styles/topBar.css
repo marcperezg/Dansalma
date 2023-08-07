@@ -1,9 +1,13 @@
 .navBar {
-    @apply w-full flex px-5
+    @apply w-full flex px-5 py-2 items-center
 }
 
 .logo {
-    @apply flex flex-grow basis-0
+    @apply flex flex-grow basis-0 items-center pb-1;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    color: #43523a;
 }
 
 .links {
@@ -14,7 +18,7 @@
 }
 
 .links li a {
-    @apply inline-block px-4 py-2;
+    @apply inline-block px-4;
 }
 
 
@@ -41,20 +45,19 @@
 
 .cssbuttons-io-button .icon {
     background: white;
-    margin-left: 1em;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
+    height: 2rem;
+    width: 2rem;
+    right: 2%;
     border-radius: 9999px;
-    right: 0.3em;
     transition: all 0.3s;
 }
 
 .cssbuttons-io-button:hover .icon {
-    width: calc(100% - 0.6em);
+    width: calc(100% - 0.55rem);
 }
 
 .cssbuttons-io-button .icon svg {
