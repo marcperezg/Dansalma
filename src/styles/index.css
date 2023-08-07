@@ -5,7 +5,6 @@
 .headerTop {
     @apply 
     py-4 
-    px-8 
     flex 
     items-center 
     fixed 
